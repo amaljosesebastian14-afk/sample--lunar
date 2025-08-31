@@ -1,0 +1,302 @@
+{
+	"info": {
+		"_postman_id": "7bfdedfd-67c2-4aa6-bc30-dc8e259e9e57",
+		"name": "lunar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44938938",
+		"_collection_link": "https://amaljosesebasstian.postman.co/workspace/lunar~13c30799-0161-4e2b-be17-190b95d2975b/collection/44938938-7bfdedfd-67c2-4aa6-bc30-dc8e259e9e57?action=share&source=collection_link&creator=44938938"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/products?page=1&limit=5&search=laptop",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/products?page=1&limit=5&search=laptop",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "search",
+							"value": "laptop"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/products/68b3f2d0d2f9388ac241710a",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjNmMjQzZDJmOTM4OGFjMjQxNzEwOSIsImVtYWlsIjoiYWpzMTRAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU2NjQxNDY2LCJleHAiOjE3NTY2NDUwNjZ9.-dVuQ4eSAjl4fvzLm_P3NNhNdxd3sJSxu8XdYbGItAQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/products/68b3f2d0d2f9388ac241710a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products",
+						"68b3f2d0d2f9388ac241710a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/products/68b3f2d0d2f9388ac241710a",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjNmMjQzZDJmOTM4OGFjMjQxNzEwOSIsImVtYWlsIjoiYWpzMTRAZ21haWwuY29tIiwiaWF0IjoxNzU2NjIzNDU0LCJleHAiOjE3NTY2MjcwNTR9.RXoP-KMPTHOqz1zPnxgRXWGmOGvXZ-HJzEIzeoXrWyA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"tyres\",\r\n  \"price\": 4400,\r\n  \"description\": \"Updated description and prize\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/products/68b3f2d0d2f9388ac241710a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products",
+						"68b3f2d0d2f9388ac241710a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/products/68b3f2d0d2f9388ac241710a",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/products/68b3f2d0d2f9388ac241710a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products",
+						"68b3f2d0d2f9388ac241710a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/products",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjNmMjQzZDJmOTM4OGFjMjQxNzEwOSIsImVtYWlsIjoiYWpzMTRAZ21haWwuY29tIiwiaWF0IjoxNzU2NjIzNDU0LCJleHAiOjE3NTY2MjcwNTR9.RXoP-KMPTHOqz1zPnxgRXWGmOGvXZ-HJzEIzeoXrWyA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Laptop\",\r\n  \"price\": 55000,\r\n  \"description\": \"Gaming laptop with RTX graphics\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/users/profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjNmMjQzZDJmOTM4OGFjMjQxNzEwOSIsImVtYWlsIjoiYWpzMTRAZ21haWwuY29tIiwiaWF0IjoxNzU2NjQxMDU3LCJleHAiOjE3NTY2NDQ2NTd9.xEo_ID3xUz9VU2hIQpsbCPsFsf2eMeh4njsWlLBMqXM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/users/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/users/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"ajs14@gmail.com\",\r\n  \"password\": \"123468\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/users/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Ajs\",\r\n  \"email\": \"ajs14@gmail.com\",\r\n  \"password\": \"123468\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
