@@ -13,6 +13,7 @@ Includes user authentication (JWT) and product management.
 - Only admin can delete products
 - pagination and search
 - Created by(auto from logged in user)
+- postman collection also added
 
 ## ⚙️ Setup Instructions
 
